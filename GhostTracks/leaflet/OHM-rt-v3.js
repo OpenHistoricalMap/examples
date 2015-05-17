@@ -109,8 +109,8 @@ function initOHMv3( minlat, minlon, maxlat, maxlon, zoom, addDate, queryOSM){
     var OHMOverpassQuery= OHMOverpassURL + OverpassQuery;
     var OSMOverpassQuery= OSMOverpassURL + OverpassQuery;
 
-    // need to serialize the queries so that the colors used in the
-    // labels are sure to match up with the courses
+    // may not need to serialize this now, unless we want to
+    // control layer order
     jQuery.getJSON( OHMOverpassQuery,
                     launchQuery
     ).then(jQuery.getJSON( OSMOverpassQuery,
@@ -156,9 +156,10 @@ function addGeoJSONLayer( feature, addDate){
 	console.log(name);
     }
     
+    var style = styles[styleIndex++]
     var geojsonLayer
 	 = L.geoJson( null,
-                      { style: styles[styleIndex],
+                      { style: style,
 			onEachFeature:
 			    function( feature, layer){
 				if( feature.properties
@@ -170,12 +171,11 @@ function addGeoJSONLayer( feature, addDate){
                        }
                     ).addTo(ohmmap);
     geojsonLayer.addData( feature, name);
-    var color = styles[styleIndex].color;
-    var label="<span style='color:"+color+"'>" + name+"</span>";
+    var label="<span style='color:"+style.color+"'>" + name+"</span>";
 
     layerControl.addOverlay( geojsonLayer, label);
-    styleIndex++;
 }
+
 
 function yearFromDate( date){
     return date.substring( 0, 4);
