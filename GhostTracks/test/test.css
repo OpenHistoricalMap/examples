@@ -1,0 +1,17 @@
+html		{ height: 100%; }
+
+body        { font-family:"dejavu sans","arial",sans-Serif; font-size: 82%; margin: 2px; height:99%; }
+label		{ font-weight: bold; }
+
+#mappane	{ width:75%; height:100%; border: solid 1px black; float: left; }
+#mapdiv 	{ width:100%; height:98%; border: solid 0px black; }
+#sliderDiv  { position:absolute; top:20px; left: 100px;  width:200px; height: 10px; z-index: 2000; }
+#sidepane	{ width:24%; height:100%; padding-left:6px; border: solid 1px red; float: left; }
+
+#titleosm	{ width: 50px; height:25px; float: left; }
+#sliderosm	{ width: 100px; height:10px; float: left; }
+#titleohm	{ width: 50px; height:25px; float: left; }
+#sliderohm	{ width: 100px; height:10px; float: left; }
+
+#space		{ clear: both; }
+

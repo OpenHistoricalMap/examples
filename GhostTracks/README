@@ -1,0 +1,23 @@
+This directory contains examples of leaflet/jquery/overpass code to
+mashup OSM & OHM data with either OSM or MapBox Satellite providing
+a base layer, and html to display selected example maps.
+
+There are currently two different approaches to the OSM/OHM mashup
+represented here.
+
+leaflet/OHMembed.js
+
+this simply overlays OHM tiles on OSM tiles or MapBox Satellite
+tiles. A control allows the opacity of the OHM tile to be adjusted.
+Examples of its use are test/StJohns.html and test/BeeLine.html
+
+leaflet/OHM-rt-v3.js
+
+this provides a choice of OSM tiles or MapBox Satellite tiles as
+a basemap. Race track data may be fetched from OHM and/or OSM
+as GeoJSON, and it is overlayed on the basemap as a set of GeoJSON
+layers, one for each relation of type=circuit and one for any
+highway=raceway ways that are not part of a circuit relation.
+
+This code is licensed under the traditional 3 clause BSD license.
+See LICENSE for details.
