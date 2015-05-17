@@ -1,0 +1,14 @@
+Leaflet examples for OHM/Ghost Tracks
+
+Note that you need to supply your own MapBox API key to use these; place
+it in the variable mapboxAPIKey near the top of code.
+
+You also will need some libraries to support these.
+
+OSMEmbed.js:
+
+See the html headers for test/BeeLine.html
+
+OSM-rt-v3.js:
+
+See the html headers for test/Thompson.html
