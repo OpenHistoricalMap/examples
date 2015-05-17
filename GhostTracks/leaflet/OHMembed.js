@@ -26,9 +26,9 @@ function initOHM( lat, lon, zoom) {
 		opacity: 1
 	});
 	
-        // Mapbox mapbox.streets-satellite
-	var mapboxAPIKey='Put MapBox API key here';
-        var mapboxUrl='http://api.tiles.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token=' + mapboxAPIkey;
+        // Mapbox mapbox.satellite
+        var mapboxAPIkey='Put MapBox API key here';
+        var mapboxUrl='http://api.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=' + mapboxAPIkey;
         var mapboxAttrib=osmAttrib+ ', Imagery <a href="http://www.mapbox.com/">Mapbox</a>';
         // Mapbox base layer
         var layerMapbox = new L.TileLayer( mapboxUrl, {

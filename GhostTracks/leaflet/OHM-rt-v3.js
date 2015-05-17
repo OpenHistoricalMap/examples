@@ -73,8 +73,8 @@ function initOHMv3( lat1, lon1, lat2, lon2, zoom, addDate, queryOSM){
     var mapboxAttrib=osmAttrib
          + ', Imagery <a href="http://www.mapbox.com/">Mapbox</a>';
 
-    // Mapbox mapbox.streets-satellite
-    var mapboxUrl='http://api.tiles.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token='+mapboxAPIKey;
+    // Mapbox mapbox.satellite
+    var mapboxUrl='http://api.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token='+mapboxAPIKey;
 
     // OSM base layer
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';    
