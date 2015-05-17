@@ -56,9 +56,14 @@ var styleIndex = 0;
 
 var addDate2 = true;
 
-function initOHMv3( minlat, minlon, maxlat, maxlon, zoom, addDate, queryOSM){
+function initOHMv3( lat1, lon1, lat2, lon2, zoom, addDate, queryOSM){
 
     addDate2 = addDate;
+
+    var minlat = Math.min( lat1, lat2);
+    var maxlat = Math.max( lat1, lat2);
+    var minlon = Math.min( lon1, lon2);
+    var maxlon = Math.max( lon1, lon2);
 
     // doesn't work in places where there probably aren't race tracks
     var lat = (minlat + maxlat) / 2;
