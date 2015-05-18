@@ -2,6 +2,10 @@ This directory contains examples of leaflet/jquery/overpass code to
 mashup OSM & OHM data with either OSM or MapBox Satellite providing
 a base layer, and html to display selected example maps.
 
+The various examples in the test directory are currently live here:
+
+http://www.na-motorsports.com/test/
+
 There are currently two different approaches to the OSM/OHM mashup
 represented here.
 
