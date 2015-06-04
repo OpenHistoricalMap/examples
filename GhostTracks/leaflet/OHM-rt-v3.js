@@ -117,12 +117,12 @@ function initOHMv3( lat1, lon1, lat2, lon2, zoom, addDate, queryOSM){
     // may not need to serialize this now, unless we want to
     // control layer order
     jQuery.getJSON( OHMOverpassQuery,
-                    launchQuery
+                    processQueryResults
     ).then(jQuery.getJSON( OSMOverpassQuery,
-                           launchQuery));
+                           processQueryResults));
 }
 
-function launchQuery( features, status){
+function processQueryResults( features, status){
 
     var nodes = {};
     var ways = {};
