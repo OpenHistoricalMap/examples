@@ -31,7 +31,7 @@
 
 var OSMOverpassURL='http://overpass-api.de/api/interpreter';
 
-var OHMOverpassURL='http://overpass.openhistoricalmap.org/api/interpreter';
+var OHMOverpassURL='http://overpass-api.openhistoricalmap.org/api/interpreter';
 
 var mapboxAPIKey='Put MapBox API key here';
 
